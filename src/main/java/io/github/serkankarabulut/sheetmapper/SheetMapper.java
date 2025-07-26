@@ -24,21 +24,26 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class SheetMapper {
+public final class SheetMapper {
 
     private static final Logger logger = LoggerFactory.getLogger(SheetMapper.class);
     private final ConverterRegistry converterRegistry;
 
-    public SheetMapper() {
-        this.converterRegistry = new ConverterRegistry();
-    }
 
-    public SheetMapper(ConverterRegistry converterRegistry) throws SheetMappingException {
+    private SheetMapper(ConverterRegistry converterRegistry) throws SheetMappingException {
         if (converterRegistry == null) {
             logger.error("ConverterRegistry cannot be null");
             throw new SheetMappingException("ConverterRegistry cannot be null");
         }
         this.converterRegistry = converterRegistry;
+    }
+
+    public static SheetMapper forCsv() {
+        return new SheetMapper(new ConverterRegistry());
+    }
+
+    public static SheetMapper forCsv(ConverterRegistry converterRegistry) throws SheetMappingException {
+        return new SheetMapper(converterRegistry);
     }
 
     public <T> List<T> map(File sheetData, Class<T> clazz) throws SheetMappingException {
