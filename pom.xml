@@ -16,6 +16,18 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Serkan Karabulut</name>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/serkankarabulut/SheetMapper.git</connection>
+        <developerConnection>scm:git:ssh://github.com:serkankarabulut/SheetMapper.git</developerConnection>
+        <url>http://github.com/serkankarabulut/SheetMapper/tree/master</url>
+    </scm>
+
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
