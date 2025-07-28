@@ -1,7 +1,7 @@
 # SheetMapper
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/serkankarabulut/SheetMapper/release.yml?branch=master&style=flat-square)](https://github.com/serkankarabulut/SheetMapper/actions/workflows/release.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.serkankarabulut/sheet-mapper.svg?style=flat-square)](https://search.maven.org/artifact/io.github.serkankarabulut/sheetmapper)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.serkankarabulut/sheetmapper.svg?style=flat-square)](https://search.maven.org/artifact/io.github.serkankarabulut/sheetmapper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 **SheetMapper** is a simple and intuitive Java library for mapping spreadsheet data directly to Plain Old Java Objects (POJOs). It uses a straightforward, annotation-based approach to eliminate boilerplate code and make data parsing a breeze.
