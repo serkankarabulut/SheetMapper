@@ -1,12 +1,12 @@
-# SheetMapper
+# SheetMapper: A Simple CSV to Java Object (POJO) Mapper
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/serkankarabulut/SheetMapper/release.yml?branch=master&style=flat-square)](https://github.com/serkankarabulut/SheetMapper/actions/workflows/release.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.serkankarabulut/sheetmapper.svg?style=flat-square)](https://search.maven.org/artifact/io.github.serkankarabulut/sheetmapper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-**SheetMapper** is a simple and intuitive Java library for mapping spreadsheet data directly to Plain Old Java Objects (POJOs). It uses a straightforward, annotation-based approach to eliminate boilerplate code and make data parsing a breeze.
+**SheetMapper** is a lightweight and intuitive Java library designed to map rows from a CSV file directly to your Java POJO (Plain Old Java Object) classes. By using a straightforward, annotation-based approach, it eliminates boilerplate code and makes parsing CSV data a breeze.
 
-Currently, it provides robust support for CSV files, with plans to support Excel formats (`.xls`, `.xlsx`) in the future.
+This library is perfect for projects that need a simple, no-fuss way to handle **CSV to Java object mapping**. It currently provides robust support for CSV files, with plans to support Excel formats (`.xls`, `.xlsx`) in the future.
 
 ## Features
 
@@ -217,15 +217,9 @@ public class AdvancedMain {
 
 ## Contributing
 
-Contributions are welcome! If you find a bug, have a feature request, or want to contribute to the code, please feel free to:
+Contributions are always welcome! Whether you find a bug, have a feature request, or want to contribute to the code, please feel free to open an issue or a pull request.
 
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/my-new-feature`).
-3.  Make your changes.
-4.  Commit your changes (`git commit -a -m 'Add some feature'`).
-5.  Push to the branch (`git push origin feature/my-new-feature`).
-6.  Open a new Pull Request.
-
+If you find this project useful, please consider giving it a star ⭐!
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
