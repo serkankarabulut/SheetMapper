@@ -27,14 +27,14 @@ SheetMapper is available on Maven Central. You can add it to your project using 
 <dependency>
     <groupId>io.github.serkankarabulut</groupId>
     <artifactId>sheet-mapper</artifactId>
-    <version>1.0.0</version> <!-- Replace it with the latest version -->
+    <version>0.1.0</version> <!-- Replace it with the latest version -->
 </dependency>
 ```
 
 ### Gradle
 
 ```groovy
-implementation 'io.github.serkankarabulut:sheet-mapper:1.0.0' // Replace with the latest version
+implementation 'io.github.serkankarabulut:sheet-mapper:0.1.0' // Replace with the latest version
 ```
 
 ## Usage
