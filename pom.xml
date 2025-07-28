@@ -8,6 +8,10 @@
     <artifactId>sheetmapper</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>SheetMapper</name>
+    <description>A Java library to map Excel or CSV sheets to POJOs</description>
+    <url>https://github.com/serkankarabulut/SheetMapper</url>
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -18,7 +22,9 @@
 
     <developers>
         <developer>
+            <id>serkankarabulut</id>
             <name>Serkan Karabulut</name>
+            <email>serkankarabulut35@gmail.com</email>
         </developer>
     </developers>
 
@@ -40,6 +46,10 @@
         <logback.version>1.5.18</logback.version>
         <mockito.version>5.18.0</mockito.version>
         <assertj.version>3.27.3</assertj.version>
+        <maven.gpg.plugin.version>3.2.8</maven.gpg.plugin.version>
+        <maven.source.plugin.version>3.3.1</maven.source.plugin.version>
+        <maven.javadoc.plugin.version>3.11.2</maven.javadoc.plugin.version>
+        <sonatype.publishing.plugin.version>0.8.0</sonatype.publishing.plugin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -98,6 +108,55 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>${maven.gpg.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven.source.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven.javadoc.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>${sonatype.publishing.plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
                 </configuration>
             </plugin>
         </plugins>
