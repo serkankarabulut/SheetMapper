@@ -1,6 +1,6 @@
 # SheetMapper
 
-[![Build Status](https://img.shields.io/travis/com/your-username/sheet-mapper.svg?style=flat-square)](https://travis-ci.com/your-username/sheet-mapper)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/serkankarabulut/SheetMapper/release.yml?branch=master&style=flat-square)](https://github.com/serkankarabulut/SheetMapper/actions/workflows/release.yml)```
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.serkankarabulut/sheet-mapper.svg?style=flat-square)](https://search.maven.org/artifact/io.github.serkankarabulut/sheet-mapper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
