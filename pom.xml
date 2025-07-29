@@ -6,7 +6,7 @@
 
     <groupId>io.github.serkankarabulut</groupId>
     <artifactId>sheetmapper</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.1.2</version>
 
     <name>SheetMapper</name>
     <description>A Java library to map Excel or CSV sheets to POJOs</description>
